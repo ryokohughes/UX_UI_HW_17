@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #eeeeee;
+	color: #4a4e4f;
+	font-size: 16px;
+	line-height: 1.8em;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* h1, h2, h3, h4, h5 {font-weight: 400;} */
+ul li, dl, li, p {margin: 0 0 10px; font-size: 16px; font-weight: 300; color: #464849;}
+a, a:link, a:visited, a:active {color: #0288b9; text-decoration: none;}
+a:hover {color: #0178a4; text-decoration: none;}
+
+::-moz-selection {background-color: #0288b9; color: #ffffff;}
+::selection {background-color: #0288b9; color: #ffffff;}
+
+/* ------------------------------
+HEADER
+------------------------------ */
+
+header {	
+
+}
+
+/* ------------------------------
+HERO
+------------------------------ */
+
+.hero {
+	text-align: center;
+}
+
+.hero h2 {font-weight: 300;}
+.hero h2 strong {font-weight: 600;}
+
+/* ------------------------------
+FOOTER
+------------------------------ */
+
+footer {
+	background: #dcf2f5;
+	text-align: center;
+}
+
+footer p {padding: 5px 0; font-size: 11px;}
+
+/* ------------------------------
+MEDIA QUERIES
+------------------------------ */
+
+@media (min-width: 992px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
