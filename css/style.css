@@ -144,9 +144,9 @@ CONTENT
 .port-thumb a {
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 	width: 100%;
-	height: 360px;
+	height: auto;
 	padding: 30px;
 	background: #ddd;
 }
@@ -154,9 +154,11 @@ CONTENT
 .port-thumb a:hover {background: #999;}
 
 .port-thumb a .port-thumb-img {
-	display: block;
-	max-height: 100%;
-	max-width: 100%;
+	display: flex;
+	width: 100%;
+	height: auto;
+	/* max-height: 100%; */
+	/* max-width: 100%; */
 }
 
 /* ------------------------------
