@@ -56,7 +56,7 @@ header .container {justify-content: space-between;}
 
 h1#header-logo {
 	margin:0;
-	padding: 0 10px;
+	padding: 0 20px;
 	display: flex;
 	font-size: 21px;
 	line-height: 40px;
@@ -66,6 +66,7 @@ h1#header-logo {
 
 h1#header-logo a {color: #4a4e4f;}
 h1#header-logo a:hover {color: #0288b9;}
+nav {display: flex;}
 
 .header-nav {
 	margin: 0;
@@ -102,13 +103,13 @@ h1#header-logo a:hover {color: #0288b9;}
 .nav-social-icons img {width: 32px;}
 
 /* ------------------------------
-HERO
+HERO / TITLE
 ------------------------------ */
 
-.hero {
+.hero, .title {
 	margin: 0;
-	padding: 40px 0 20px;
-	width: 100%;
+	padding: 40px 20px 20px;
+	width: calc(100% - 40px);
 	text-align: center;
 }
 
@@ -116,17 +117,25 @@ HERO
 	margin: 0 auto;
 	width: 100%;
 	max-width: 760px;
+	font-size: 22px;
 	font-weight: 400;
 }
 
-.hero .tagline strong {font-size: 22px; font-weight: 600;}
+.hero .tagline strong {font-weight: 600;}
 .hero-logo {width: 160px; height: auto; margin: 0 0 30px;}
+
+.page-title {
+	margin: 0 0;
+	width: 100%;
+	text-align: center;
+	font-size: 42px;
+}
 
 /* ------------------------------
 CONTENT
 ------------------------------ */
 
-.index-content {
+.index-content, .content {
 	margin: 0;
 	padding: 20px 0 50px;
 	display: flex;
@@ -135,9 +144,8 @@ CONTENT
 	/* gap: 0; */
 }
 
-.index-content .container {
-	flex-flow: row wrap;
-}
+.index-content .container {flex-flow: row wrap;}
+.content .container {flex-flow: column nowrap;}
 
 .port-thumb {
 	display: flex;
@@ -145,7 +153,7 @@ CONTENT
 	width: calc(50% - 10px);
 }
 
-.port-thumb * {display: inherit; flex-direction:inherit;}
+.port-thumb * {display: inherit; flex-direction: inherit;}
 
 .port-thumb a {
 	display: flex;
@@ -163,9 +171,8 @@ CONTENT
 	display: flex;
 	width: 100%;
 	height: auto;
-	/* max-height: 100%; */
-	/* max-width: 100%; */
 }
+
 
 /* ------------------------------
 FOOTER
@@ -187,6 +194,13 @@ MEDIA QUERIES
 
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
+	.port-thumb {width: calc(100% - 10px);}
+}
 
+@media (max-width: 414px) {
+	header {padding: 10px 0;}
+	h1#header-logo {display: none;}
+	nav {width: 100%;}
+	.hero .tagline {font-size: 16px}
 }
